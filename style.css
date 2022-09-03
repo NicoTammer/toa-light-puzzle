@@ -2,14 +2,14 @@
     margin: 0 auto;
     width: 50%;
     text-align: center;
+    max-width: 600px;
+    min-width: 600px;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 600px;
-    min-width: 600px;
 }
 
 .cell {
