@@ -1,0 +1,44 @@
+#container {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cell {
+    flex: 0 0 200px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.lit {
+    background-image: url("images/lit.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.unlit {
+    background-image: url("images/unlit.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.empty {
+    background-image: url("images/empty.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    margin: 0 auto;
+}
