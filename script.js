@@ -36,12 +36,15 @@ function scrambleCells() {
 }
 
 function flipCell(index, isUserInput) {
-    lit[index] == 1 ? (lit[index] = 0) : (lit[index] = 1);
-    cells[index].firstElementChild.style.display = "none";
-    cells[index].lastElementChild.style.display = "none";
+    let firstElement = cells[index].firstElementChild;
+    let lastElement = cells[index].lastElementChild;
+
+    lit[index] < 1 ? (lit[index]++) : (lit[index]--);
+    firstElement.style.display = "none";
+    lastElement.style.display = "none";
     lit[index] == 1 ?
-        (cells[index].firstElementChild.style.display = "block") :
-        (cells[index].lastElementChild.style.display = "block");
+        (firstElement.style.display = "block") :
+        (lastElement.style.display = "block");
 
     if (isUserInput) {
         flipCell(triplets[index][0], false);
